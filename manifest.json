@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Claude.ai Font Changer",
+    "version": "1.1",
+    "description": "Changes the font on claude.ai",
+    "permissions": [
+      "https://claude.ai/*",
+      "storage"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://claude.ai/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
